@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimaPET</title>
+  <!-- CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="bg-light p-3">
+    <div class="container">
+      <h1>AnimaPET</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agendamento">Agendamento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Visualização dos produtos -->
+  <section id="produtos" class="py-5">
+    <div class="container">
+      <h2>Produtos</h2>
+   <!-- Carrossel de imagens -->
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="racao1.webp" class="d-block w-100" alt="Racao 1" width="12"
+        height="300">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ração seca</h5>
+          <p>Ração seca premium para cães e gatos. Nutrição equilibrada em cada croquete, proporcionando saúde e vitalidade.</p>
+          <p>R$37,13</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="racao2.png" class="d-block w-100" alt="Produto 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ração úmida</h5>
+          <p>Ração úmida de alta qualidade para cães e gatos. Sabor irresistível, textura suculenta e aroma apetitoso.</p>
+          <p>R$13,37</p>
+          <button type="submit" class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</div>
+</section>
+
+  <!-- Formulário de cadastro do cliente e do pet -->
+  <section id="cadastro" class="bg-light py-5">
+    <div class="container">
+      <h2>Cadastro</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nomeCliente" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nomeCliente" required>
+        </div>
+        <div class="mb-3">
+            <label for="sobrenomeCliente" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="sobrenomeCliente" required>
+          </div> 
+        <div class="mb-3">
+          <label for="enderecoCliente" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="enderecoCliente" required>
+        </div>
+        <div class="mb-3">
+            <label for="emailCliente" class="form-label">Email</label>
+            <input type="text" class="form-control" id="emailCliente" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefoneCliente" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneCliente required>
+          </div>
+          <div class="mb-3">
+          </div>
+
+        <!-- Formulário para o pet -->
+        <h3>Dados do Pet</h3>
+        <div class="mb-3">
+          <label for="nomePet" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nomePet" required>
+        </div>
+        <div class="mb-3">
+          <label for="racaPet" class="form-label">Raça</label>
+          <input type="text" class="form-control" id="racaPet" required>
+        </div>
+        <div class="mb-3">
+          <label for="tipoPet" class="form-label">Tipo do Pet</label>
+          <select class="form-select" id="tipoPet" required>
+            <option value="">Selecione...</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="temperamentoPet" class="form-label">Temperamento</label>
+          <input type="text" class="form-control" id="temperamentoPet" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Agendamento -->
+  <section id="agendamento" class="py-5">
+    <div class="container">
+      <h2>Agendamento</h2>
+      <form>
+        <div class="mb-3">
+          <label for="servico" class="form-label">Selecione o Serviço</label>
+          <select class="form-select" id="servico" required>
+            <option value="">Selecione...</option>
+            <option value="tosa">Tosa</option>
+            <option value="banho">Banho</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="porte" class="form-label">Selecione o Porte</label>
+          <select class="form-select" id="porte" required>
+            <option value="">Selecione...</option>
+            <option value="pequeno">Pequeno</option>
+            <option value="grande">Grande</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Agendar</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>© 2024 AnimaPET. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6">
+          <p class="float-end">Contato: contato@animapet.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+         
