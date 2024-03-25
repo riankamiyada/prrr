@@ -17,19 +17,18 @@
       <nav>
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Produtos</a>
+            <a class="nav-link" href="#produtos">Produtos</a>
+          </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cadastro</a>
+            <a class="nav-link" href="#cadastro">Cadastro</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#agendamento">Agendamento</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#telebusca">Telebusca</a>
+            </li>            
           </li>
         </ul>
       </nav>
@@ -157,6 +156,36 @@
       </form>
     </div>
   </section>
+<!-- Seção de Telebusca -->
+<section id="telebusca" class="bg-light py-5">
+  <div class="container">
+    <h2>Telebusca</h2>
+    <p>Realizado dentro do horário comercial, por profissional experiente, transporta animais para serviços da clínica e estética. Os animais são acomodados individualmente para transporte.</p>
+    <!-- Formulário de Telebusca -->
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Seleção de Dia -->
+          <div class="mb-3">
+            <label for="diaTelebusca" class="form-label">Escolha o Dia</label>
+            <input type="date" class="form-control" id="diaTelebusca" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Seleção de Horário -->
+          <div class="mb-3">
+            <label for="horarioTelebusca" class="form-label">Escolha o Horário</label>
+            <input type="time" class="form-control" id="horarioTelebusca" required>
+          </div>
+        </div>
+      </div>
+      <!-- Botão de Agendamento -->
+      <button type="submit" class="btn btn-primary">Agendar Telebusca</button>
+    </form>
+  </div>
+</section>
+
+
   
 
   <!-- Rodapé -->
