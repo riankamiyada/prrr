@@ -1,7 +1,4 @@
 
-Claro! Abaixo está um exemplo de como você pode criar um arquivo README para descrever o site AnimaPET:
-
-AnimaPET
 AnimaPET é um site para um petshop fictício, fornecendo uma variedade de produtos, serviços e recursos relacionados a animais de estimação. O site foi desenvolvido com o objetivo de oferecer uma experiência fácil de usar para os clientes e potenciais clientes do petshop.
 
 Conteúdo
